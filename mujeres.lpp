@@ -1,0 +1,35 @@
+Entero sexo, edad, estrato
+
+Inicio
+
+    Escriba "Ingrese su sexo (1 = Mujer, 2 = Hombre): "
+    Lea sexo
+    
+    Escriba "Ingrese su edad: "
+    Lea edad
+    
+    Escriba "Ingrese su estrato: "
+    Lea estrato
+    
+    Si sexo = 1 Entonces
+        
+        Si edad >= 18 Entonces
+        SI edad <= 25 Entonces
+            
+            Si estrato = 1 Entonces
+            escriba "usted es apta para recibir el apoyo economico" 
+            si estrato = 2 Entonces
+                Escriba "Usted es apta para recibir el apoyo economico"
+            Sino
+                Escriba "No cumple los requisitos."
+            Fin Si
+            fin si
+        Sino
+            Escriba "No cumple los requisitos."
+        Fin Si
+        
+    Sino
+        Escriba "No cumple los requisitos."
+    Fin Si
+    fin si
+Fin

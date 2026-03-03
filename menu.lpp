@@ -1,0 +1,50 @@
+real numero1, numero2, resultado
+caracter opcion
+
+inicio
+ 
+    escriba "PROGRAMA DE OPERACIONES MATEMATICAS BASICAS"
+    escriba "(+) suma"
+    escriba "(-) diferencia"
+    ESCRIBA "(*) producto"
+    ESCRIBA "(/) division"
+     
+    escriba "selecciones opcion: "
+    lea opcion 
+    
+    escriba "ingrese numero1: "
+    lea numero1
+    escriba "ingrese numero2: "
+    lea numero2
+    
+    si opcion = '+' entonces
+       resultado <- numero1 + numero2
+    escriba "la suma es: ", resultado
+    sino
+      si opcion = '*' entonces
+       resultado <- numero1 * numero2
+    escriba "el producto es: ", resultado
+    
+    sino
+      si opcion = '-' entonces
+         resultado <- numero1 - numero2
+    escriba "el producto es: ", resultado
+    sino 
+      si opcion = '/' entonces
+      si numero2 <> 0 entonces
+         resultado <- numero1 / numero2
+ 
+    escriba "la division es: ", resultado
+    sino
+    escriba "erros: no se puede dividir entre cero"
+     
+     fin si
+     sino
+       escriba "opcion no valida"
+       fin si
+      fin si
+     fin si
+    fin si
+
+fin
+    

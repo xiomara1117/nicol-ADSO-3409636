@@ -1,0 +1,17 @@
+real total, total_pagar
+
+inicio
+
+    escriba "ingrese el total de la compra: "
+    lea total
+    
+    si total > 1000 entonces
+       total_pagar <- total - (total * 0.10)
+    sino
+       total_pagar <- total
+    fin si
+    
+    escriba "total pagar: ", total_pagar
+    
+fin
+    

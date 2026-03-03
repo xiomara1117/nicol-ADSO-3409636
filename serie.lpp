@@ -1,0 +1,31 @@
+Entero serie
+Inicio
+    Escriba "Ingrese el numero de serie:"
+    Lea serie
+
+    Si serie >= 1468 Entonces
+        Si serie <= 1568 Entonces
+            Escriba "El producto es defectuoso"
+        Sino
+            Si serie >= 7000 Entonces
+                Si serie <= 7999 Entonces
+                    Escriba "El producto es defectuoso"
+                Sino
+                    Si serie >= 8883 Entonces
+                        Si serie <= 9001 Entonces
+                            Escriba "El producto es defectuoso"
+                          Sino
+                       Escriba "El producto NO es defectuoso"
+                     Fin Si
+                   Sino
+                   Escriba "El producto NO es defectuoso"
+               Fin Si
+          Fin Si
+        Sino
+            Escriba "El producto NO es defectuoso"
+        Fin Si
+      Fin Si
+    Sino
+     Escriba "El producto NO es defectuoso"
+    Fin Si
+Fin

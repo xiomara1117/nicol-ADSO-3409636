@@ -1,0 +1,17 @@
+real sueldo, descuento, neto
+
+Inicio
+    Escriba "Ingrese el sueldo del trabajador:"
+    Lea sueldo
+
+    Si sueldo <= 1000000 Entonces
+        descuento <- sueldo * 0.03
+    Sino
+        descuento <- sueldo * 0.05
+    Fin Si
+
+    neto <- sueldo - descuento
+
+    Escriba "Descuento aplicado: ", descuento
+    Escriba "Neto a pagar: ", neto
+Fin

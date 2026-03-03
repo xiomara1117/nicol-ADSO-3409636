@@ -1,0 +1,23 @@
+real km, total
+
+inicio
+
+    escriba "ingrese la cantodad de kilometros recorridos"
+    lea km
+    
+    si km <= 300 entonces
+       total <- 100000
+       
+    sino
+      si km <= 100000 entonces
+         total <- 100000 + (km - 300) * 100000
+         
+    sino 
+         total <- 100000 + (700 * 100000) + (km - 100000) * 500
+     fin si
+    fin si
+    
+    escriba "total pagar: $", total
+    
+ fin
+    

@@ -1,0 +1,58 @@
+ENTERO numero1, numero2, resultado
+CARACTER opcion
+
+INICIO
+
+   llamar posicionar_cursor (25,5)
+   escriba "M E N U   P R I N C I P A L"
+
+   llamar posicionar_cursor (15,10)
+   escriba "(+) Suma"
+
+   llamar posicionar_cursor (15,12)
+   escriba "(-) Resta"
+
+   llamar posicionar_cursor (15,14)
+   escriba "(*) Multiplicacion"
+
+   llamar posicionar_cursor (15,16)
+   escriba "(/) Division"
+
+   llamar posicionar_cursor (15,20)
+   escriba "Elija su opcion [ ]"
+
+   llamar posicionar_cursor (32,20)
+   lea opcion
+
+   llamar limpiar_pantalla
+
+   escriba "Ingrese numero1: "
+   lea numero1
+
+   escriba "Ingrese numero2: "
+   lea numero2
+
+
+  caso opcion de
+      '+':
+         resultado <- numero1 + numero2
+         escriba numero1, " + ", numero2, " = ", resultado
+
+      '-':
+         resultado <- numero1 - numero2
+         escriba numero1, " - ", numero2, " = ", resultado
+
+      '*':
+         resultado <- numero1 * numero2
+         escriba numero1, " * ", numero2, " = ", resultado
+
+      '/':
+         resultado <- numero1 / numero2
+         escriba numero1, " / ", numero2, " = ", resultado
+   fin caso
+   
+   lea opcion    
+   llamar limpiar_pantalla 
+   llamar posicionar_cursor (35,15)
+   escriba "C H A O"
+Fin
